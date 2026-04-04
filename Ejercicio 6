@@ -1,0 +1,11 @@
+ALGORITMO calcularmedia 
+DEFINIR numero1, numero2, numero3,  promedio  como real 
+ESCRIBIR "Ingresa el primer numero:"
+LEER  numero1
+ESCRIBIR "ingresa el segundo numero:"
+LEER NUMERO 2
+ESCRIBIR"INGRESA EL TERCER NUMERO:" 
+LEER numero 3 
+promedio <- (numero1 + numero2 + numero3) / 3
+    Escribir "La media de los tres números es: ", promedio
+FinAlgoritmo
