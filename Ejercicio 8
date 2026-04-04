@@ -1,0 +1,15 @@
+# Entrada de datos
+sueldo_base = float(input("Ingrese el sueldo base: "))
+v1 = float(input("Monto de la venta 1: "))
+v2 = float(input("Monto de la venta 2: "))
+v3 = float(input("Monto de la venta 3: "))
+
+# Procesamiento
+total_ventas = v1 + v2 + v3
+comisiones = total_ventas * 0.10
+total_pago = sueldo_base + comisiones
+
+# Salida de resultados
+print(f"\n--- Resumen del Mes ---")
+print(f"Total obtenido por comisiones: ${comisiones:.2f}")
+print(f"Sueldo total a recibir: ${total_pago:.2f}")
