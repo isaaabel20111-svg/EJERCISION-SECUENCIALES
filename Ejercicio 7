@@ -1,0 +1,8 @@
+Algoritmo ConvertirMinutos
+    Definir total_minutos, horas, minutos_restantes Como Entero
+    Escribir "Ingresa la cantidad de minutos:"
+    Leer total_minutos
+    horas <- trunc(total_minutos / 60)
+    minutos_restantes <- total_minutos MOD 60
+    Escribir total_minutos, " minutos son ", horas, " horas y ", minutos_restantes, " minutos."
+FinAlgoritmo
