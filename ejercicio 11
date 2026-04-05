@@ -1,0 +1,11 @@
+# Entrada de datos
+num1 = float(input("Ingrese el primer número: "))
+num2 = float(input("Ingrese el segundo número: "))
+
+# Procesamiento
+# La función abs() devuelve el valor absoluto (siempre positivo)
+distancia = abs(num1 - num2)
+
+# Salida de resultados
+print(f"\n--- Resultado ---")
+print(f"La distancia entre {num1} y {num2} es: {distancia}")
