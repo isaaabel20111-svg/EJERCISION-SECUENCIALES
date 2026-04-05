@@ -1,0 +1,24 @@
+# Entrada de datos: Notas Parciales
+p1 = float(input("Nota del Parcial 1: "))
+p2 = float(input("Nota del Parcial 2: "))
+p3 = float(input("Nota del Parcial 3: "))
+
+# Entrada de datos: Examen y Trabajo
+examen_final = float(input("Nota del Examen Final: "))
+trabajo_final = float(input("Nota del Trabajo Final: "))
+
+# Procesamiento
+promedio_parciales = (p1 + p2 + p3) / 3
+porcentaje_parciales = promedio_parciales * 0.55
+porcentaje_examen = examen_final * 0.30
+porcentaje_trabajo = trabajo_final * 0.15
+
+nota_final = porcentaje_parciales + porcentaje_examen + porcentaje_trabajo
+
+# Salida de resultados
+print(f"\n--- Calificaciones Finales ---")
+print(f"Promedio de parciales (55%): {porcentaje_parciales:.2f}")
+print(f"Aporte del Examen (30%): {porcentaje_examen:.2f}")
+print(f"Aporte del Trabajo (15%): {porcentaje_trabajo:.2f}")
+print(f"-------------------------------")
+print(f"CALIFICACIÓN FINAL: {nota_final:.2f}")
