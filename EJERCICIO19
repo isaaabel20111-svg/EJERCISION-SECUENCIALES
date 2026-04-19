@@ -1,0 +1,25 @@
+Algoritmo CalcularNotaFinal
+    Definir correctas, incorrectas, enBlanco Como Entero
+    Definir puntajeFinal Como Entero
+    
+    Escribir "Ingrese la cantidad de respuestas CORRECTAS:"
+    Leer correctas
+    
+    Escribir "Ingrese la cantidad de respuestas INCORRECTAS:"
+    Leer incorrectas
+    
+    Escribir "Ingrese la cantidad de respuestas EN BLANCO:"
+    Leer enBlanco
+    
+    // Calcular el puntaje total
+    // (correctas * 5) + (incorrectas * -1) + (enBlanco * 0)
+    puntajeFinal <- (correctas * 5) - (incorrectas * 1)
+    
+    Escribir "---------------------------------------"
+    Escribir "Resumen de resultados:"
+    Escribir "Puntos por correctas: ", correctas * 5
+    Escribir "Puntos por incorrectas: -", incorrectas
+    Escribir "Puntos por respuestas en blanco: 0"
+    Escribir "---------------------------------------"
+    Escribir "EL PUNTAJE FINAL OBTENIDO ES: ", puntajeFinal
+FinAlgoritmo
