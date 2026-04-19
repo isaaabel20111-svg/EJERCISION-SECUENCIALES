@@ -1,0 +1,20 @@
+Algoritmo MostrarIniciales
+    Definir nombre, apellido Como Cadena
+    Definir inicialNombre, inicialApellido Como Cadena
+    
+    Escribir "Por favor, ingresa tu nombre:"
+    Leer nombre
+    Escribir "Por favor, ingresa tu apellido:"
+    Leer apellido
+    
+    // Extraemos el primer carácter (del índice 0 al 0 o del 1 al 1)
+    // Nota: Depende de si en Configurar -> Opciones de Lenguaje tienes 
+    // activado "Utilizar índices en arreglos y cadenas en base 0"
+    
+    // Si tu PSeInt empieza en 0:
+    inicialNombre <- SUBCADENA(nombre, 0, 0)
+    inicialApellido <- SUBCADENA(apellido, 0, 0)
+    
+    // Convertimos a mayúsculas para que siempre se vea como una inicial formal
+    Escribir "Tus iniciales son: ", MAYUSCULAS(inicialNombre), ".", MAYUSCULAS(inicialApellido), "."
+FinAlgoritmo
