@@ -1,0 +1,19 @@
+Algoritmo InvertirNumero
+    Definir num, decenas, unidades, numInvertido Como Entero
+    
+    Escribir "Ingrese un número de dos cifras:"
+    Leer num
+    
+    // Si el usuario ingresa 23:
+    
+    // 1. Extraer decenas (23 / 10 = 2.3 -> Truncado es 2)
+    decenas <- TRUNC(num / 10)
+    
+    // 2. Extraer unidades (El residuo de 23 / 10 es 3)
+    unidades <- num MOD 10
+    
+    // 3. Armar el invertido (3 * 10 + 2 = 32)
+    numInvertido <- (unidades * 10) + decenas
+    
+    Escribir "El número invertido es: ", numInvertido
+FinAlgoritmo
