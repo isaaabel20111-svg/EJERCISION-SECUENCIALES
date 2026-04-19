@@ -1,0 +1,28 @@
+Algoritmo TiempoDeEncuentro
+    Definir dist, v1, v2, vRelativa, tiempoHoras, tiempoMinutos Como Real
+    
+    Escribir "Ingrese la distancia entre los vehículos (KM):"
+    Leer dist
+    
+    Escribir "Ingrese la velocidad del vehículo más rápido (V1 en KM/H):"
+    Leer v1
+    
+    Escribir "Ingrese la velocidad del vehículo más lento (V2 en KM/H):"
+    Leer v2
+    
+    // Validar que el de atrás sea realmente más rápido para evitar errores
+    Si v1 > v2 Entonces
+        // Calcular la velocidad relativa
+        vRelativa <- v1 - v2
+        
+        // Calcular tiempo en horas
+        tiempoHoras <- dist / vRelativa
+        
+        // Convertir a minutos (1 hora = 60 minutos)
+        tiempoMinutos <- tiempoHoras * 60
+        
+        Escribir "El vehículo más rápido alcanzará al otro en: ", tiempoMinutos, " minutos."
+    Sino
+        Escribir "Error: El vehículo de atrás debe tener una velocidad mayor para alcanzar al otro."
+    FinSi
+FinAlgoritmo
