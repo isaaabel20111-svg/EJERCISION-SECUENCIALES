@@ -1,0 +1,31 @@
+Algoritmo HoraDeLlegada
+    Definir hh, mm, ss, tiempoViaje Como Entero
+    Definir totalSegundosSalida, totalSegundosLlegada Como Entero
+    Definir hhLlegada, mmLlegada, ssLlegada Como Entero
+    
+    Escribir "Ingrese la hora de salida (HH):"
+    Leer hh
+    Escribir "Ingrese los minutos de salida (MM):"
+    Leer mm
+    Escribir "Ingrese los segundos de salida (SS):"
+    Leer ss
+    Escribir "Ingrese el tiempo de viaje en segundos (T):"
+    Leer tiempoViaje
+    
+    // 1. Convertir todo a segundos
+    totalSegundosSalida <- (hh * 3600) + (mm * 60) + ss
+    
+    // 2. Sumar el tiempo de viaje
+    totalSegundosLlegada <- totalSegundosSalida + tiempoViaje
+    
+    // 3. Convertir de nuevo a formato HH:MM:SS
+    // Usamos MOD 86400 (segundos en un día) por si el viaje dura más de un día
+    totalSegundosLlegada <- totalSegundosLlegada MOD 86400
+    
+    hhLlegada <- TRUNC(totalSegundosLlegada / 3600)
+    mmLlegada <- TRUNC((totalSegundosLlegada MOD 3600) / 60)
+    ssLlegada <- totalSegundosLlegada MOD 60
+    
+    Escribir "La hora de llegada a la ciudad B es: "
+    Escribir hhLlegada, ":", mmLlegada, ":", ssLlegada
+FinAlgoritmo
